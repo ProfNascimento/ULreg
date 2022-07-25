@@ -13,6 +13,7 @@ setwd("/home/ULreg/")
 
 ## TRAIN DATA SET
 UL <- read.csv("ULReg_Train.csv", sep="")
+UL[order(as.Date(UL$momento, format="%Y-%m-%d")),]
 time_h=lubridate::hour(UL$momento)
 time_w=lubridate::week(UL$momento)
 time_m=lubridate::month(UL$momento)
