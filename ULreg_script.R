@@ -9,7 +9,7 @@ library(psych)
 library(Rmisc)
 library(maxLik)
 
-setwd("/home/visibilia04/Documents/PROJECTS/UL/ULreg/")
+setwd("/home/ULreg/")
 
 ## TRAIN DATA SET
 UL <- read.csv("ULReg_Train.csv", sep="")
